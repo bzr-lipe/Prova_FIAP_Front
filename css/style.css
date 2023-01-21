@@ -156,7 +156,6 @@ header{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    height: 510px;
 }
 
 .informacoes-cursos-title {
@@ -166,6 +165,15 @@ header{
     text-transform: uppercase;
     position: relative;
     bottom: 48px;
+}
+
+.informacoes-cursos-subtitle {
+    font-family: 'Gotham HTF Medium';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--magenta);
+    position: absolute;
+    right: 580px;
 }
 
 .informacoes-curso-columns{
@@ -215,3 +223,43 @@ header{
 .curso-column-right-list-item{
     display: flex;
 }
+
+.grade-content{
+    padding-top: 219px;
+    width: 50%;
+    margin: auto;
+
+    height: 1000px;
+}
+
+.grade-title {
+    font-family: 'Gotham HTF Medium';
+    font-weight: 500;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: var(--light-gray);
+}
+
+.grade-subtitle{
+    display: flex;
+}
+
+.grade-subtitle-marker {
+    height: 1px;
+    width: 74px;
+    background-color: var(--gray); 
+    position: relative;
+    margin: 25px 14px 0 0;
+}
+
+.grade-subtitle-text {
+    font-family: 'Gotham HTF Book';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-top: 7px;
+    color: var(--gray);
+}
+
