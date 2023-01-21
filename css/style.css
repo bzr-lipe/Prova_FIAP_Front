@@ -23,7 +23,12 @@
     --header-gray: #151819;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
+    
     background-color: var(--black);
 }
 
@@ -261,5 +266,24 @@ header{
     text-transform: uppercase;
     margin-top: 7px;
     color: var(--gray);
+}
+
+.arrow-down{
+    display: flex;
+    position: absolute;
+    background-color: #616D72;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+}
+
+.arrow-down-icon {
+    margin: 30px auto;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid var(--magenta);
+    border-left: 2px solid var(--magenta);
+  transform: rotate(135deg);
+  position: absolute;
 }
 
