@@ -33,7 +33,7 @@ body{
 }
 
 header{
-    height: 100vh;
+    height: 110vh;
     
 }
 
@@ -105,13 +105,14 @@ header{
 #apresentation-page {
     z-index: 1;
     width: 100%;
-    height: 100%;
-    margin-top: 40px;
+    height: 110vh;
     background-image: url(../images/header.png);
-    background-size: 100% 100vh;
+    background-size: 100% 110vh;
+    overflow: auto;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    
 }
 
 .graduacao-heros{
@@ -144,6 +145,7 @@ header{
     align-items: center;
     margin: 0 auto;
     gap: 60px;
+    padding-bottom: 150px;
 }
 
 .apresentation-page-content .btn-join {
@@ -218,7 +220,7 @@ header{
 
 .list-marker {
     max-width: 20px;
-    background-color: gray;
+    background-color: var(--gray);
     max-height: 1px;
     margin: 14px 19px 0 73px;
     opacity: 0.8;
@@ -266,15 +268,16 @@ header{
     text-transform: uppercase;
     margin-top: 7px;
     color: var(--gray);
+    margin-bottom: 85px;
 }
 
 .arrow-down{
     display: flex;
     position: absolute;
-    background-color: #616D72;
     width: 100%;
     height: fit-content;
     justify-content: center;
+    margin-top: 410px;
 }
 
 .arrow-down-icon {
@@ -283,7 +286,55 @@ header{
     height: 25px;
     border-top: 2px solid var(--magenta);
     border-left: 2px solid var(--magenta);
-  transform: rotate(135deg);
-  position: absolute;
+    transform: rotate(225deg);
+    position: absolute;
+    transition: .5s;
 }
 
+.arrow-down-icon:hover {
+    margin: 25px auto;
+    width: 30px;
+    height: 30px;
+    box-shadow: 1px 1px 1px rgb(255, 0, 0, 0), 0 1px 1px 2px rgb(0, 21, 255, 0),
+    5px 5px 5px rgba(0, 255, 242, 1), 2px 2px 2px rgb(9, 1, 255);
+}
+
+.scroll-text {
+    font-family: 'Gotham HTF Book';
+    font-style: normal;
+    color: var(--light-gray);
+    font-size: 9px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gaveta-turmas {
+    height: 90px;
+    width: 100%;
+    border: 1px solid var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    transition: 0.3s;
+}
+
+.gaveta-turmas:hover {
+    border-color: var(--magenta);
+}
+
+.gaveta-turmas-title{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--light-gray);
+    text-transform: uppercase;
+
+}
+
+.gaveta-turmas-btn {
+    border-radius: 50%;
+    border: 1px solid var(--magenta); 
+    width: 48px;
+    height: 48px;
+}
