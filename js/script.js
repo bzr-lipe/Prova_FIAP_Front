@@ -1,5 +1,9 @@
-const btnGaveta = document.getElementsByClassName('gaveta-turmas-btn-element');
+const btnGaveta = document.getElementById('btn-accordion1');
+const accordion1 = document.getElementById('accordion-1');
 
 btnGaveta.onclick = function(){
-    alert('ok');
+    
+    if(accordion1.style.height=="90px"){
+        alert('oi')
+    }
 };

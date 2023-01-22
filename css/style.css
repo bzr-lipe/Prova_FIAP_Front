@@ -266,7 +266,6 @@ header{
     font-size: 30px;
     line-height: 35px;
     text-transform: uppercase;
-    margin-top: 7px;
     color: var(--gray);
     margin-bottom: 85px;
 }
@@ -295,8 +294,7 @@ header{
     margin: 25px auto;
     width: 30px;
     height: 30px;
-    box-shadow: 1px 1px 1px rgb(255, 0, 0, 0), 0 1px 1px 2px rgb(0, 21, 255, 0),
-    5px 5px 5px rgba(0, 255, 242, 1), 2px 2px 2px rgb(9, 1, 255);
+
 }
 
 .scroll-text {
@@ -309,19 +307,23 @@ header{
 }
 
 .gaveta-turmas {
-    height: 382px;
+    
     width: 100%;
     border: 1px solid var(--light-gray);
     color: var(--light-gray);
-    transition: 0.3s;
-    padding-top: 27px;
+    transition: 0.5s;
+    height: 90px;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .gaveta-turmas-header-elements {
     display: flex;
     justify-content: space-between;
+    height: 90px;
     padding: 0 40px;
+    align-items: center;
+    
 }
 
 .gaveta-turmas:hover {
@@ -334,7 +336,7 @@ header{
     font-weight: 500;
     font-size: 25px;
     text-transform: uppercase;
-
+    height: fit-content;
 }
 
 .gaveta-turmas-btn {
@@ -358,8 +360,15 @@ header{
     transform: rotate(90deg);
 }
 
-.gaveta-turmas-content {
-    position: absolute;
+.btn-element-action-open{
+    
+}
+
+.gavetas-turmas-text {
+    position: relative;
+}
+
+.accordion-turmas-content {
     margin: 28px 40px 0;
     width: 764px;
     height: 200px;
