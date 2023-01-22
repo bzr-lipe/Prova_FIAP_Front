@@ -235,8 +235,7 @@ header{
     padding-top: 219px;
     width: 50%;
     margin: auto;
-
-    height: 1000px;
+    margin-bottom: 151px;
 }
 
 .grade-title {
@@ -368,8 +367,7 @@ header{
     margin: 28px 40px 0;
     width: 764px;
     height: 200px;
-    position: relative;;
-
+    position: relative;
 }
 
 .accordion-text-decoration{
@@ -401,15 +399,12 @@ header{
 
 #accordion-2 {
     margin-top: 20px;
-
 }
 
 .accordion2-content{
-    background-color: aqua;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 
@@ -417,6 +412,7 @@ header{
 .accordion2-content-top-line, .accordion2-content-bottom-line {
     display: flex;
     gap: 5px;
+    margin: 0 auto;
 }
 
 .accordion2-content-top-line{
@@ -424,11 +420,70 @@ header{
 }
 
 .accordion2-content-bottom-line {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .accordion2-item {
     width: 220px;
     height: 156px;
+    display: flex;
+
+}
+
+.accordion2-item-title {
+    font-family: 'Gotham HTF Book';
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+
+    
+}
+
+.accordion2-item-content{
+    padding:  0px 20px 25px;
+    width: 100%;
+    height: fit-content;
+    padding-top: 30px;
+    transition: 0.3s;
+    color: var(--light-gray);
+    position: relative;
+}
+
+.accordion2-item-content:hover {
+    background-color: var(--magenta);
+    color: var(--black);
+}
+
+.accordion-2-item-decoration{
+    width: 35px;
+    height: 1px;
+    background-color: var(--light-gray);
+    position: absolute;
+    margin-top: 24px;
+}
+
+.turmas {
+    margin: 0 auto;
+    width: 50%;
+    background-color: aqua;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.turmas-title{
+    font-family: 'Gotham HTF Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 50px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.turmas-title-under{
+    width: 40px;
+    height: 4px;
     background-color: #ED145B;
 }
