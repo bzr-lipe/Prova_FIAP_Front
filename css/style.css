@@ -307,7 +307,6 @@ header{
 }
 
 .gaveta-turmas {
-    
     width: 100%;
     border: 1px solid var(--light-gray);
     color: var(--light-gray);
@@ -355,23 +354,17 @@ header{
     background-color: var(--magenta);
 }
 
-.btn-element-action{
+#btn-element-action1, #btn-element-action2{
     position: absolute;
     transform: rotate(90deg);
-}
-
-.btn-element-action-open{
-    
-}
-
-.gavetas-turmas-text {
-    position: relative;
+    transition: 0.5s;
 }
 
 .accordion-turmas-content {
     margin: 28px 40px 0;
     width: 764px;
     height: 200px;
+    position: relative;;
 
 }
 
@@ -400,4 +393,9 @@ header{
     line-height: 24px;
     color: var(--gray);
     letter-spacing: 0.05em;
+}
+
+#accordion-2 {
+    margin-top: 20px;
+    height: 90px;
 }
