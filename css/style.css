@@ -312,7 +312,6 @@ header{
     height: 382px;
     width: 100%;
     border: 1px solid var(--light-gray);
-    padding: 0 40px;
     color: var(--light-gray);
     transition: 0.3s;
     padding-top: 27px;
@@ -322,6 +321,7 @@ header{
 .gaveta-turmas-header-elements {
     display: flex;
     justify-content: space-between;
+    padding: 0 40px;
 }
 
 .gaveta-turmas:hover {
@@ -358,9 +358,10 @@ header{
     transform: rotate(90deg);
 }
 
-.gaveta-turmas-text {
-    margin-top: 28px;
-    width: 100%;
+.gaveta-turmas-content {
+    position: absolute;
+    margin: 28px 40px 0;
+    width: 764px;
     height: 200px;
 
 }
@@ -376,6 +377,7 @@ header{
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
+    line-height: 40px;
     text-transform: uppercase;
     color: var(--magenta);
     margin-left: 21px;
@@ -388,5 +390,5 @@ header{
     font-size: 16px;
     line-height: 24px;
     color: var(--gray);
-    margin-top: 24px;
+    letter-spacing: 0.05em;
 }
