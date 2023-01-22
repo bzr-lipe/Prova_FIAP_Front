@@ -306,17 +306,21 @@ header{
     text-transform: uppercase;
 }
 
+.accordion-active {
+    height: 382px;
+}
+
 .gaveta-turmas {
     width: 100%;
     border: 1px solid var(--light-gray);
     color: var(--light-gray);
     transition: 0.5s;
-    height: 90px;
     flex-direction: column;
     overflow: hidden;
+    height: 90px;
 }
 
-.gaveta-turmas-header-elements {
+.accordion-top-elements {
     display: flex;
     justify-content: space-between;
     height: 90px;
@@ -330,7 +334,7 @@ header{
     color: var(--magenta);
 }
 
-.gaveta-turmas-title{
+.accordion-title{
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 25px;
@@ -338,7 +342,7 @@ header{
     height: fit-content;
 }
 
-.gaveta-turmas-btn {
+.accordion-btn {
     border-radius: 50%;
     border: 1px solid var(--magenta); 
     width: 48px;
@@ -347,7 +351,7 @@ header{
     align-items: center;
 }
 
-.gaveta-turmas-btn-element{
+.accordion-btn-element{
     margin: auto;
     width: 21px;
     height: 2px;
@@ -368,7 +372,7 @@ header{
 
 }
 
-.gavetas-turmas-text-decoration{
+.accordion-text-decoration{
     width: 1px;
     background-color: var(--magenta);
     height: 137px;
@@ -397,5 +401,34 @@ header{
 
 #accordion-2 {
     margin-top: 20px;
-    height: 90px;
+
+}
+
+.accordion2-content{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+.accordion2-content-top-line, .accordion2-content-bottom-line {
+    display: flex;
+    gap: 5px;
+}
+
+.accordion2-content-top-line{
+    margin-bottom: 5px;
+}
+
+.accordion2-content-bottom-line {
+    margin-bottom: 30px;
+}
+
+.accordion2-item {
+    width: 220px;
+    height: 156px;
+    background-color: #ED145B;
 }
