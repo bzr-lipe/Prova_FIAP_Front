@@ -255,7 +255,7 @@ header{
     width: 74px;
     background-color: var(--gray); 
     position: relative;
-    margin: 25px 14px 0 0;
+    margin: 20px 14px 0 0;
 }
 
 .grade-subtitle-text {
@@ -468,9 +468,14 @@ header{
     background-color: aqua;
     height: 1000px;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
+
+.title-turmas {
+    background-color: #616D72;
+}
+
 
 .turmas-title{
     font-family: 'Gotham HTF Medium';
@@ -480,10 +485,12 @@ header{
     line-height: 50px;
     text-transform: uppercase;
     width: fit-content;
+    color: var(--light-gray);
 }
 
 .turmas-title-under{
     width: 40px;
     height: 4px;
+    margin: 25px auto 0;
     background-color: #ED145B;
 }
