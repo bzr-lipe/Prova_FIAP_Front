@@ -72,22 +72,18 @@ window.addEventListener('scroll', () => {
 accordionTopContentMobile1.onclick = function () {
     if (AccordionMobile1.style.height == '') {
         AccordionMobile1.setAttribute('style', 'height: 480px');
-        accordionTopContentMobile1.setAttribute('style', 'color: var(--magenta)');
         accordionBtnElementMobile1.setAttribute('style', 'transform: rotate(0deg)');
     } else {
         AccordionMobile1.removeAttribute('style', 'height: 382px!important');
         accordionTopContentMobile1.removeAttribute('style', 'transform: rotate(0deg)');
-        accordionBtnElementMobile1.removeAttribute('style', 'color: var(--magenta)')
     }
 };
 accordionTopContentMobile2.onclick = function () {
     if (AccordionMobile2.style.height == '') {
         AccordionMobile2.setAttribute('style', 'height: 480px');
-        accordionTopContentMobile2.setAttribute('style', 'color: var(--magenta)');
         accordionBtnElementMobile2.setAttribute('style', 'transform: rotate(0deg)');
     } else {
         AccordionMobile2.removeAttribute('style', 'height: 382px!important');
         accordionTopContentMobile2.removeAttribute('style', 'transform: rotate(0deg)');
-        accordionBtnElementMobile2.removeAttribute('style', 'color: var(--magenta)')
     }
 };
