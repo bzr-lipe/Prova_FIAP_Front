@@ -4,10 +4,12 @@
     font-family: 'Gotham HTF Medium';
     src: url(../font/GothamHTF-Medium.otf);
 }
+
 @font-face {
     font-family: 'Gotham HTF Bold';
     src: url(../font/GothamHTF-Bold.otf);
 }
+
 @font-face {
     font-family: 'Gotham HTF Book';
     src: url(../font/GothamHTF-Book.otf);
@@ -23,18 +25,18 @@
     --header-gray: #151819;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    
+body {
+
     background-color: var(--black);
 }
 
-header{
+header {
     height: 110vh;
-    
+
 }
 
 .header {
@@ -59,14 +61,14 @@ header{
 }
 
 
-.menu-list{
+.menu-list {
     display: flex;
     flex-direction: row;
     gap: 80px;
-    
+
 }
 
-.components-menu-item{
+.components-menu-item {
     font: 15px 'Gotham HTF Book';
     font-weight: 500;
     text-decoration: none;
@@ -81,7 +83,7 @@ header{
 }
 
 
-.btn-join{
+.btn-join {
     font: 12px 'Gotham HTF Book';
     font-weight: 500;
     text-decoration: none;
@@ -112,21 +114,21 @@ header{
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    
+
 }
 
-.graduacao-heros{
+.graduacao-heros {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.graduacao-heros-title{
+.graduacao-heros-title {
     font: 60px 'Gotham HTF Medium';
     font-weight: 500;
     line-height: 70px;
 
     text-align: center;
     color: var(--light-gray);
-    
+
 }
 
 .graduacao-heros-desc {
@@ -148,12 +150,14 @@ header{
     padding-bottom: 150px;
 }
 
-.apresentation-page-content .btn-join, .turmas .btn-join  {
+.apresentation-page-content .btn-join,
+.turmas .btn-join {
     width: 180px;
     color: var(--magenta);
 }
 
-.apresentation-page-content .btn-join:hover, .turmas .btn-join:hover {
+.apresentation-page-content .btn-join:hover,
+.turmas .btn-join:hover {
     background-color: var(--magenta);
     color: var(--black);
 }
@@ -183,14 +187,14 @@ header{
     right: 580px;
 }
 
-.informacoes-curso-columns{
+.informacoes-curso-columns {
     width: 100%;
     display: flex;
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    
+
 }
 
 .informacoes-curso-columns div {
@@ -201,18 +205,18 @@ header{
 .informacoes-curso-column-left {
     color: var(--light-gray);
     border-right: 0.5px solid var(--gray);
-    }
+}
 
 .informacoes-curso-column-left p {
     padding-right: 98px;
 }
 
-.informacoes-curso-column-right{
+.informacoes-curso-column-right {
     color: var(--gray);
     border-left: 0.5px solid var(--gray);
 }
 
-.informacoes-curso-column-right-list{
+.informacoes-curso-column-right-list {
     gap: 35px;
     display: flex;
     flex-direction: column;
@@ -223,15 +227,20 @@ header{
     background-color: var(--gray);
     max-height: 1px;
     margin: 14px 19px 0 73px;
-    opacity: 0.8;
+
+    transition: .2s;
 }
 
+.list-marker-active {
+    box-shadow: 0px 0px 10px 2px var(--magenta);
+    background-color: var(--magenta);
+}
 
-.curso-column-right-list-item{
+.curso-column-right-list-item {
     display: flex;
 }
 
-.grade-content{
+.grade-content {
     padding-top: 219px;
     width: 50%;
     margin: auto;
@@ -246,14 +255,14 @@ header{
     color: var(--light-gray);
 }
 
-.grade-subtitle{
+.grade-subtitle {
     display: flex;
 }
 
 .grade-subtitle-marker {
     height: 1px;
     width: 74px;
-    background-color: var(--gray); 
+    background-color: var(--gray);
     position: relative;
     margin: 20px 14px 0 0;
 }
@@ -269,7 +278,7 @@ header{
     margin-bottom: 85px;
 }
 
-.arrow-down{
+.arrow-down {
     display: flex;
     position: absolute;
     width: 100%;
@@ -295,15 +304,15 @@ header{
 @keyframes scrollAnimation {
     0% {
         margin-top: 30px;
-      }
-    
+    }
+
     50% {
         margin-top: 50px;
-      }
+    }
 
     100% {
         margin-top: 30px;
-      }
+    }
 }
 
 #scroll-text {
@@ -336,7 +345,7 @@ header{
     height: 90px;
     padding: 0 40px;
     align-items: center;
-    
+
 }
 
 .gaveta-turmas:hover {
@@ -344,7 +353,7 @@ header{
     color: var(--magenta);
 }
 
-.accordion-title{
+.accordion-title {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 25px;
@@ -354,21 +363,22 @@ header{
 
 .accordion-btn {
     border-radius: 50%;
-    border: 1px solid var(--magenta); 
+    border: 1px solid var(--magenta);
     width: 48px;
     height: 48px;
     display: flex;
     align-items: center;
 }
 
-.accordion-btn-element{
+.accordion-btn-element {
     margin: auto;
     width: 21px;
     height: 2px;
     background-color: var(--magenta);
 }
 
-#btn-element-action1, #btn-element-action2{
+#btn-element-action1,
+#btn-element-action2 {
     position: absolute;
     transform: rotate(90deg);
     transition: 0.5s;
@@ -381,7 +391,7 @@ header{
     position: relative;
 }
 
-.accordion-text-decoration{
+.accordion-text-decoration {
     width: 1px;
     background-color: var(--magenta);
     height: 137px;
@@ -412,7 +422,7 @@ header{
     margin-top: 20px;
 }
 
-.accordion2-content{
+.accordion2-content {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -420,13 +430,14 @@ header{
 
 
 
-.accordion2-content-top-line, .accordion2-content-bottom-line {
+.accordion2-content-top-line,
+.accordion2-content-bottom-line {
     display: flex;
     gap: 5px;
     margin: 0 auto;
 }
 
-.accordion2-content-top-line{
+.accordion2-content-top-line {
     margin-bottom: 5px;
 }
 
@@ -447,11 +458,11 @@ header{
     font-size: 16px;
     line-height: 24px;
 
-    
+
 }
 
-.accordion2-item-content{
-    padding:  0px 20px 25px;
+.accordion2-item-content {
+    padding: 0px 20px 25px;
     width: 100%;
     height: fit-content;
     padding-top: 30px;
@@ -459,6 +470,7 @@ header{
     color: var(--light-gray);
     position: relative;
 }
+
 .accordion2-item-content:hover {
     box-shadow: 0px 0px 5px var(--magenta);
 }
@@ -469,13 +481,13 @@ header{
     color: var(--black);
 }
 
-.accordion-2-item-decoration{
+.accordion-2-item-decoration {
     width: 35px;
     height: 1px;
     background-color: var(--light-gray);
     position: absolute;
     margin-top: 24px;
-    
+
 }
 
 .turmas {
@@ -487,7 +499,7 @@ header{
     margin-bottom: 193px;
 }
 
-.turmas-title{
+.turmas-title {
     font-family: 'Gotham HTF Medium';
     font-style: normal;
     font-weight: 500;
@@ -498,7 +510,7 @@ header{
     color: var(--light-gray);
 }
 
-.turmas-title-under{
+.turmas-title-under {
     width: 40px;
     height: 4px;
     margin: 25px auto 0;
@@ -518,7 +530,8 @@ header{
     color: var(--light-gray);
 }
 
-.turmas-table th, .turmas-table td {
+.turmas-table th,
+.turmas-table td {
     border: 1px solid var(--dark-gray);
     height: 72px;
     text-align: center;
@@ -538,7 +551,7 @@ header{
     align-items: center;
 }
 
-.table-small-text{
+.table-small-text {
     font-family: 'Roboto';
     font-size: 11px;
     font-weight: 400;
@@ -554,7 +567,7 @@ header{
     width: 210px;
 }
 
-.table-th-horario{
+.table-th-horario {
     width: 153px;
 }
 
@@ -575,7 +588,7 @@ header{
     width: 234px;
 }
 
-.dias-text{
+.dias-text {
     margin: 0 10px;
 }
 
@@ -584,7 +597,7 @@ header{
     margin-left: 23px;
 }
 
-.table-subtitle{
+.table-subtitle {
     color: var(--gray);
     font-family: 'Roboto';
     font-size: 11px;
@@ -597,13 +610,4 @@ header{
 .turmas-btn {
     margin-top: 50px;
 
-}
-
-@media (max-heigth: 480px){
-    html{    
-        background-color: blue;
-    }
-    .header {
-        display: none
-    }
 }
