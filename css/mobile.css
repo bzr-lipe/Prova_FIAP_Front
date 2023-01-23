@@ -20,6 +20,7 @@
         width: 60px;
         padding: 7px 0;
         margin-left: 10px;
+        border: 1px solid var(--magenta);
     }
 
 
@@ -94,7 +95,8 @@
     }
 
     .informacoes-cursos-title{
-        font-size: 30px;
+        font-family: 'Gotham HTF Medium';
+        font-size: 35px;
     }
 
     
@@ -103,10 +105,13 @@
     .informacoes-curso-column-left {
         border: none;
         width: 100%;
+        
     }
 
     .informacoes-curso-column-left p {
         padding: 0;
+        font-weight: 'Gotham HTF Book';
+        line-height: 25px;
     }
 
     .informacoes-curso-column-right {
@@ -125,8 +130,8 @@
         font-family: 'Gotham HTF Book';
     }
 
-    .gaveta-turmas {
-
+    .accordion-top-elements{
+        margin-bottom: 30px;
     }
 
     .accordion-btn {
@@ -136,6 +141,10 @@
 
     .accordion-btn-element {
         width: 12px;
+    }
+
+    #btn-element-action1-mobile{
+        transform: rotate(90deg);
     }
 
     .accordion-turmas-content {
@@ -186,11 +195,46 @@
         display: none;
     }
 
-    #accordion-3-mobile{
+    #accordion-3-mobile, #accordion-4-mobile{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        height:90px;
+        width: 337.5px;
+    }
 
+    .accordion-text-mobile{
+        width: 80%;
+        margin: 0 0 30px 40px;
+    }
+
+    .accordion-text-title {
+        font-family: 'Gotham HTF Medium';
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: var(--magenta);
+    }
+
+    .accordion-text-item {
+        font-family: 'Gotham HTF Book';
+        font-size: 15px;
+        font-weight: 300;
     }
  
     .informacoes-cursos-subtitle{
         display: none;
     }
+
+    .turmas {
+        width: 100%;
+    }
+
+    .accordion-turmas-content-mobile, .grade-accordion-mobile {
+        display: block;
+    }
+
+    .table-subtitle{
+        margin-right: 16px;
+    }
+
   }

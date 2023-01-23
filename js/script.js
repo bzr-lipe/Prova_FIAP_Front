@@ -1,11 +1,19 @@
 const btnGaveta1 = document.getElementById('btn-accordion1');
 const btnGaveta2 = document.getElementById('btn-accordion2');
+const btnAccordionMobile1 = document.getElementById('btn-accordion1-mobile');
+const btnAccordionMobile2 = document.getElementById('btn-accordion2-mobile');
 const accordion1 = document.getElementById('accordion-1');
 const accordion2 = document.getElementById('accordion-2');
+const AccordionMobile1 = document.getElementById('accordion-3-mobile');
+const AccordionMobile2 = document.getElementById('accordion-4-mobile');
 const accordionBtnElement1 = document.getElementById('btn-element-action1');
 const accordionBtnElement2 = document.getElementById('btn-element-action2');
+const accordionBtnElementMobile1 = document.getElementById('btn-element-action1-mobile');
+const accordionBtnElementMobile2 = document.getElementById('btn-element-action2-mobile');
 const accordionTopContent1 = document.getElementById('accordion-top-elements1');
 const accordionTopContent2 = document.getElementById('accordion-top-elements2');
+const accordionTopContentMobile1 = document.getElementById('accordion-top-elements-mbl-1');
+const accordionTopContentMobile2 = document.getElementById('accordion-top-elements-mbl-2');
 const scrollDownText = document.getElementById('scroll-text');
 const arrowDownSymbol = document.getElementById('arrow-symbol');
 const screenSize = window.innerWidth;
@@ -60,3 +68,26 @@ window.addEventListener('scroll', () => {
         arrowDownSymbol.style.opacity = "100%";
     }
 })
+
+accordionTopContentMobile1.onclick = function () {
+    if (AccordionMobile1.style.height == '') {
+        AccordionMobile1.setAttribute('style', 'height: 480px');
+        accordionTopContentMobile1.setAttribute('style', 'color: var(--magenta)');
+        accordionBtnElementMobile1.setAttribute('style', 'transform: rotate(0deg)');
+    } else {
+        AccordionMobile1.removeAttribute('style', 'height: 382px!important');
+        accordionTopContentMobile1.removeAttribute('style', 'transform: rotate(0deg)');
+        accordionBtnElementMobile1.removeAttribute('style', 'color: var(--magenta)')
+    }
+};
+accordionTopContentMobile2.onclick = function () {
+    if (AccordionMobile2.style.height == '') {
+        AccordionMobile2.setAttribute('style', 'height: 480px');
+        accordionTopContentMobile2.setAttribute('style', 'color: var(--magenta)');
+        accordionBtnElementMobile2.setAttribute('style', 'transform: rotate(0deg)');
+    } else {
+        AccordionMobile2.removeAttribute('style', 'height: 382px!important');
+        accordionTopContentMobile2.removeAttribute('style', 'transform: rotate(0deg)');
+        accordionBtnElementMobile2.removeAttribute('style', 'color: var(--magenta)')
+    }
+};

@@ -328,6 +328,9 @@ header {
     animation: scrollAnimation 3s infinite ease-in-out;
 }
 
+.accordion-turmas-content-mobile, .grade-accordion-mobile {
+    display: none;
+}
 
 
 @keyframes scrollAnimation {
