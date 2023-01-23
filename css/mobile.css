@@ -3,6 +3,10 @@
         width: 100%;;
     }
 
+    header {
+        height: 80vh;
+    }
+
     .header {
         height: 60px;
     }
@@ -49,7 +53,7 @@
     }
 
     .graduacao-heros{
-        margin-top: 50px;
+        margin-top: 140px;
         width: 318px;
     }
     
@@ -90,7 +94,7 @@
     }
 
     .informacoes-cursos-title{
-        border: 1px solid var(--light-gray);
+        font-size: 30px;
     }
 
     
@@ -111,6 +115,79 @@
     
     .informacoes-curso-columns div {
         width: 90%;
+    }
+
+    .grade-content {
+        width: 90%;
+    }
+
+    .accordion-title {
+        font-family: 'Gotham HTF Book';
+    }
+
+    .gaveta-turmas {
+
+    }
+
+    .accordion-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .accordion-btn-element {
+        width: 12px;
+    }
+
+    .accordion-turmas-content {
+        
+        width: 250px;
+    }
+
+    .accordion-text-decoration {
+        display: none;
+    }
+
+    .grade-title {
+        margin-top: 50px;
+        font-size: 35px;
+    }
+
+    .grade-subtitle-text {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .gavetas-turmas-title{
+        margin: 0;
+    }
+
+    .gavetas-turmas-text{
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .turmas {
+        width: 90%;
+    }
+
+    .accordion2-content {
+        display: none;
+    }
+
+    #accordion2-mobile{
+        display: block;
+    }
+
+    .turmas-title {
+        font-size: 35px;
+    }
+
+    .turmas-table {
+        display: none;
+    }
+
+    #accordion-3-mobile{
+        
     }
  
   }

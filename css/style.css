@@ -151,6 +151,7 @@ header {
 
 }
 
+
 .apresentation-page-content {
     display: flex;
     flex-direction: column;
@@ -251,6 +252,11 @@ header {
     display: flex;
     transition: .2s;
 }
+
+#accordion2-mobile{
+    display: none;
+}
+
 
 
 .curso-column-right-list-item:hover {
