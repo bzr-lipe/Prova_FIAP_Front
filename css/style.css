@@ -173,7 +173,7 @@ header {
 }
 
 .informacoes-curso {
-    width: 65%;
+    width: 1170px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -194,7 +194,7 @@ header {
     text-transform: uppercase;
     color: var(--magenta);
     position: absolute;
-    right: 580px;
+    margin-left: 655px;
 }
 
 .informacoes-curso-columns {
@@ -404,7 +404,7 @@ header {
 }
 
 .accordion-turmas-content {
-    margin: 0px 40px ;
+    margin: 0px 40px 0;
     width: 764px;
     height: 200px;
     position: relative;
