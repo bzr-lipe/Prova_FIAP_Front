@@ -6,8 +6,9 @@ const accordionBtnElement1 = document.getElementById('btn-element-action1');
 const accordionBtnElement2 = document.getElementById('btn-element-action2');
 const accordionTopContent1 = document.getElementById('accordion-top-elements1');
 const accordionTopContent2 = document.getElementById('accordion-top-elements2');
-const accordionItem = document.getElementsByClassName('accordion2-item-content');
-
+const accordionItem = document.querySelectorAll('.accordion2-item-content');
+const scrollDownText = document.getElementById('scroll-text');
+const arrowDownSymbol = document.getElementById('arrow-symbol')
 
 accordionTopContent1.onclick = function(){
     if(accordion1.style.height == '') {
@@ -33,7 +34,24 @@ accordionTopContent2.onclick = function(){
         accordionBtnElement2.removeAttribute('style', 'transform: rotate(0deg)');
         accordionTopContent2.removeAttribute('style', 'color: var(--magenta)');
     }
-    
 };
 
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
 
+    if(scrolled>=150){
+        scrollDownText.style.fontSize="0px";
+    }else {
+        scrollDownText.style.fontSize ="9px";
+    }
+
+    if(scrolled>=400){
+        arrowDownSymbol.style.opacity="0%";
+    }else {
+        arrowDownSymbol.style.opacity ="100%";
+    }
+})
+
+const text1 = document.getElementById('list-text1').onmouseover = () =>{
+    let marker1 = document.getElementById('list-marker1')
+}

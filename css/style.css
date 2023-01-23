@@ -148,12 +148,12 @@ header{
     padding-bottom: 150px;
 }
 
-.apresentation-page-content .btn-join {
+.apresentation-page-content .btn-join, .turmas .btn-join  {
     width: 180px;
     color: var(--magenta);
 }
 
-.apresentation-page-content .btn-join:hover {
+.apresentation-page-content .btn-join:hover, .turmas .btn-join:hover {
     background-color: var(--magenta);
     color: var(--black);
 }
@@ -287,22 +287,33 @@ header{
     transform: rotate(225deg);
     position: absolute;
     transition: .5s;
+    animation: scrollAnimation 3s infinite ease-in-out;
 }
 
-.arrow-down-icon:hover {
-    margin: 25px auto;
-    width: 30px;
-    height: 30px;
 
+
+@keyframes scrollAnimation {
+    0% {
+        margin-top: 30px;
+      }
+    
+    50% {
+        margin-top: 50px;
+      }
+
+    100% {
+        margin-top: 30px;
+      }
 }
 
-.scroll-text {
+#scroll-text {
     font-family: 'Gotham HTF Book';
     font-style: normal;
     color: var(--light-gray);
     font-size: 9px;
     text-align: center;
     text-transform: uppercase;
+    transition: 1s;
 }
 
 .accordion-active {
@@ -427,8 +438,8 @@ header{
     width: 220px;
     height: 156px;
     display: flex;
-
 }
+
 
 .accordion2-item-title {
     font-family: 'Gotham HTF Book';
@@ -448,6 +459,10 @@ header{
     color: var(--light-gray);
     position: relative;
 }
+.accordion2-item-content:hover {
+    box-shadow: 0px 0px 5px var(--magenta);
+}
+
 
 .accordion2-item-content:hover {
     background-color: var(--magenta);
@@ -460,15 +475,16 @@ header{
     background-color: var(--light-gray);
     position: absolute;
     margin-top: 24px;
+    
 }
 
 .turmas {
     margin: 0 auto;
     width: 962px;
-    height: 1000px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 193px;
 }
 
 .turmas-title{
@@ -573,7 +589,21 @@ header{
     font-family: 'Roboto';
     font-size: 11px;
     font-weight: 400;
-    line-height: 16px;
     letter-spacing: 0.05em;
-    text-align: left;
+    margin-left: auto;
+    margin-top: 8px;
+}
+
+.turmas-btn {
+    margin-top: 50px;
+
+}
+
+@media (max-heigth: 480px){
+    html{    
+        background-color: blue;
+    }
+    .header {
+        display: none
+    }
 }
