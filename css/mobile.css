@@ -1,6 +1,7 @@
 @media screen and (max-width: 480px) {
     .html {
-        width: 100%;;
+        width: 100%;
+        ;
     }
 
     header {
@@ -33,7 +34,7 @@
         flex-direction: column;
         width: 60%;
         padding-left: 20px;
-        
+
     }
 
     .menu-header-list {
@@ -46,24 +47,24 @@
         height: 70vh;
         background-size: auto 70vh;
         background-position: top;
-    
+
     }
 
-    .components-menu-item{
+    .components-menu-item {
         font-size: 22px;
     }
 
-    .graduacao-heros{
+    .graduacao-heros {
         margin-top: 140px;
         width: 318px;
     }
-    
+
     .graduacao-heros-title {
         font: 30px 'Gotham HTF Book';
         font-weight: 400;
         line-height: 35px;
     }
-    
+
     .graduacao-heros-desc {
         padding-top: 10px;
         font: 18px 'Gotham HTF Book';
@@ -71,7 +72,7 @@
         line-height: 22px;
     }
 
-    .header-logo-image{
+    .header-logo-image {
         width: 60%;
     }
 
@@ -85,27 +86,23 @@
         margin-top: 25px;
     }
 
-    #scroll-text{
+    #scroll-text {
         display: none;
     }
 
-    .informacoes-curso
-    {
+    .informacoes-curso {
         width: 90%;
     }
 
-    .informacoes-cursos-title{
+    .informacoes-cursos-title {
         font-family: 'Gotham HTF Medium';
         font-size: 35px;
     }
 
-    
-
-
     .informacoes-curso-column-left {
         border: none;
         width: 100%;
-        
+
     }
 
     .informacoes-curso-column-left p {
@@ -117,7 +114,7 @@
     .informacoes-curso-column-right {
         display: none;
     }
-    
+
     .informacoes-curso-columns div {
         width: 90%;
     }
@@ -130,7 +127,7 @@
         font-family: 'Gotham HTF Book';
     }
 
-    .accordion-top-elements{
+    .accordion-top-elements {
         margin-bottom: 30px;
     }
 
@@ -143,12 +140,12 @@
         width: 12px;
     }
 
-    #btn-element-action1-mobile{
+    #btn-element-action1-mobile {
         transform: rotate(90deg);
     }
 
     .accordion-turmas-content {
-        
+
         width: 250px;
     }
 
@@ -166,11 +163,11 @@
         margin-bottom: 30px;
     }
 
-    .gavetas-turmas-title{
+    .gavetas-turmas-title {
         margin: 0;
     }
 
-    .gavetas-turmas-text{
+    .gavetas-turmas-text {
         margin: 0;
         font-size: 15px;
     }
@@ -183,7 +180,7 @@
         display: none;
     }
 
-    #accordion2-mobile{
+    #accordion2-mobile {
         display: block;
     }
 
@@ -195,14 +192,15 @@
         display: none;
     }
 
-    #accordion-3-mobile, #accordion-4-mobile{
+    #accordion-3-mobile,
+    #accordion-4-mobile {
         margin-top: 40px;
         margin-bottom: 20px;
-        height:90px;
+        height: 90px;
         width: 337.5px;
     }
 
-    .accordion-text-mobile{
+    .accordion-text-mobile {
         width: 80%;
         margin: 0 0 30px 40px;
     }
@@ -220,8 +218,8 @@
         font-size: 15px;
         font-weight: 300;
     }
- 
-    .informacoes-cursos-subtitle{
+
+    .informacoes-cursos-subtitle {
         display: none;
     }
 
@@ -229,12 +227,13 @@
         width: 100%;
     }
 
-    .accordion-turmas-content-mobile, .grade-accordion-mobile {
+    .accordion-turmas-content-mobile,
+    .grade-accordion-mobile {
         display: block;
     }
 
-    .table-subtitle{
+    .table-subtitle {
         margin-right: 16px;
     }
 
-  }
+}

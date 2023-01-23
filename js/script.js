@@ -20,10 +20,10 @@ const screenSize = window.innerWidth;
 
 accordionTopContent1.onclick = function () {
     if (accordion1.style.height == '') {
-        
-        if(screenSize<500){
+
+        if (screenSize < 500) {
             accordion1.setAttribute('style', 'height: 650px');
-        }else {
+        } else {
             accordion1.setAttribute('style', 'height: 382px');
         }
         accordionTopContent1.setAttribute('style', 'color: var(--magenta)');
@@ -39,9 +39,9 @@ accordionTopContent1.onclick = function () {
 
 accordionTopContent2.onclick = function () {
     if (accordion2.style.height == '') {
-        if(screenSize<500){
+        if (screenSize < 500) {
             accordion2.setAttribute('style', 'height: 650px');
-        }else {
+        } else {
             accordion2.setAttribute('style', 'height: 519px');
         }
         accordionTopContent2.setAttribute('style', 'color: var(--magenta)');

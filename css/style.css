@@ -34,7 +34,7 @@ body {
     background-color: var(--black);
 }
 
-.anchor{
+.anchor {
     top: 80vh;
 
     position: absolute;
@@ -189,7 +189,7 @@ header {
     bottom: 48px;
 }
 
-.graduacao-heros-desc-decor{
+.graduacao-heros-desc-decor {
     display: none;
 }
 
@@ -253,7 +253,7 @@ header {
     transition: .2s;
 }
 
-#accordion2-mobile{
+#accordion2-mobile {
     display: none;
 }
 
@@ -263,7 +263,7 @@ header {
     color: var(--light-gray);
 }
 
-.curso-column-right-list-item:hover .list-marker{
+.curso-column-right-list-item:hover .list-marker {
     box-shadow: 0px 0px 10px 2px var(--magenta);
     background-color: var(--magenta);
 }
@@ -317,7 +317,7 @@ header {
 
 .arrow-down-icon {
     margin: 30px auto;
-    
+
     width: 25px;
     height: 25px;
     border-top: 2px solid var(--magenta);
@@ -328,7 +328,8 @@ header {
     animation: scrollAnimation 3s infinite ease-in-out;
 }
 
-.accordion-turmas-content-mobile, .grade-accordion-mobile {
+.accordion-turmas-content-mobile,
+.grade-accordion-mobile {
     display: none;
 }
 
@@ -515,7 +516,7 @@ header {
 
 .accordion2-item-content:hover .accordion-2-item-decoration {
     width: 0;
-  }
+}
 
 .accordion-2-item-decoration {
     width: 35px;
@@ -648,6 +649,4 @@ header {
 
 }
 
-@media screen and (max-width: 1024px) {
-    
-}
+@media screen and (max-width: 1024px) {}
