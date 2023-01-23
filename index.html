@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistemas para Internet - Graduação - FIAP</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="shortcut icon" href="https://www.fiap.com.br/wp-content/themes/fiap2016/images/favicon.ico">
 </head>
@@ -22,7 +23,7 @@
                 <div class="menu-header-list">
                     <ul class="menu-list">
                         <li class="components-menu-list">
-                            <a class="components-menu-item" href="#infomacoes">o curso</a>
+                            <a class="components-menu-item" href="#informacoes">o curso</a>
                         </li>
                         <li class="components-menu-list">
                             <a class="components-menu-item" href="">matriz curricular</a>
@@ -32,7 +33,15 @@
                         </li>
                     </ul>
                 </div>
-                <a class="btn-join" href="https://vestibular.fiap.com.br/etapa1.asp" target="_blank">inscreva-se</a>
+                <button class="mobile-btn">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div>
+                </button>
+                <a class="btn-join" href="https://vestibular.fiap.com.br/etapa1.asp" target="_blank" id="header-top-btn">inscreva-se</a>
             </div>
         </div>
         <div id="apresentation-page">
@@ -50,11 +59,12 @@
             </div>
         </div>
     </header>
-    <section class="informacoes-curso">
-        <h1 class="informacoes-cursos-title" id="infomacoes">o curso</h1>
+    <a class="anchor" id="informacoes"></a>
+    <section class="informacoes-curso" >
+        <h1 class="informacoes-cursos-title">o curso</h1>
         <p class="informacoes-cursos-subtitle">voce vai se preparar para:</p>
         <div class="informacoes-curso-columns">
-            <div class="informacoes-curso-column-left">
+            <div class="informacoes-curso-column-left" >
                 <p>Estamos na era da indústria 4.0. Tudo é digital, nossas experiências, compras e como consumimos
                     informação. O profissional de sistemas web nunca foi tão requisitado quanto agora, pare para pensar
                     quantos apps você acessou hoje, quantas compras online fez no último mês e quantos sites e redes

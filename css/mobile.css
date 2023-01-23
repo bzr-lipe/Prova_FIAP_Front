@@ -1,0 +1,161 @@
+@media screen and (max-width: 480px) {
+    .html {
+        width: 100%;
+        ;
+    }
+
+    .header {
+        height: 60px;
+        
+        width: 100%;
+    }
+
+    #header-top-btn {
+        display: none;
+    }
+
+    #menu-header {
+        margin: 0;
+        justify-content: space-between;
+    }
+
+
+
+    .mobile-btn {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        background-color: transparent;
+        border: none;
+    }
+
+    .mobile-btn-hamburger {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+    }
+
+    #hamburger-1 {
+        top: 10px;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        width: 60%;
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+
+    .menu-header-list {
+        top: 60px;
+        text-align: right;
+        position: absolute;
+        flex-direction: column;
+        width: 90%;
+        height: 400px;
+        background-color: aqua;
+    }
+
+    #apresentation-page {
+        z-index: 1;
+        width: 100%;
+        height: 70vh;
+        background-size: auto 70vh;
+        background-position: top;
+
+    }
+
+    .components-menu-item {
+        font-size: 22px;
+    }
+
+    .graduacao-heros-title {
+        font: 35px 'Gotham HTF Book';
+    }
+
+    .graduacao-heros-desc {
+        font: 20px 'Gotham HTF Book';
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    .header-logo-image {
+        width: 90px;
+    }
+
+
+
+    .mobile-btn {
+        display: block;
+        position: relative;
+        height: 60px;
+    }
+
+    .mobile-btn .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .mobile-btn .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .mobile-btn .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: var(--magenta);
+    }
+
+    .mobile-btn .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .mobile-btn .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .mobile-btn .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .mobile-btn input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(0);
+    }
+
+    .mobile-btn input[type="checkbox"]:checked~.hamburger-lines .line1 {
+        transform: rotate(45deg);
+    }
+
+    .mobile-btn input[type="checkbox"]:checked~.hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+
+    .mobile-btn input[type="checkbox"]:checked~.hamburger-lines .line3 {
+        transform: rotate(-45deg);
+    }
+
+    .mobile-btn input[type="checkbox"]:checked~.logo {
+        display: none;
+    }
+
+}

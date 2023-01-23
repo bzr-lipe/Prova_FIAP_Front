@@ -34,9 +34,15 @@ body {
     background-color: var(--black);
 }
 
+.anchor{
+    top: 80vh;
+
+    position: absolute;
+    display: block;
+}
+
 header {
     height: 110vh;
-
 }
 
 .header {
@@ -92,6 +98,10 @@ header {
     border: 2px solid var(--magenta);
     transition: .2s;
     text-transform: uppercase;
+}
+
+.mobile-btn {
+    display: none;
 }
 
 #menu-header .btn-join {
@@ -216,6 +226,8 @@ header {
     border-left: 0.5px solid var(--gray);
 }
 
+
+
 .informacoes-curso-column-right-list {
     gap: 35px;
     display: flex;
@@ -227,9 +239,10 @@ header {
     background-color: var(--gray);
     max-height: 1px;
     margin: 14px 19px 0 73px;
-
     transition: .2s;
 }
+
+
 
 .list-marker-active {
     box-shadow: 0px 0px 10px 2px var(--magenta);
@@ -238,11 +251,17 @@ header {
 
 .curso-column-right-list-item {
     display: flex;
+    transition: .2s;
+}
+
+
+.curso-column-right-list-item:hover {
+    color: var(--light-gray);
 }
 
 .grade-content {
     padding-top: 219px;
-    width: 50%;
+    width: 962px;
     margin: auto;
     margin-bottom: 151px;
 }
@@ -264,7 +283,7 @@ header {
     width: 74px;
     background-color: var(--gray);
     position: relative;
-    margin: 20px 14px 0 0;
+    margin: 17px 14px 0 0;
 }
 
 .grade-subtitle-text {
@@ -385,7 +404,7 @@ header {
 }
 
 .accordion-turmas-content {
-    margin: 28px 40px 0;
+    margin: 0px 40px ;
     width: 764px;
     height: 200px;
     position: relative;
@@ -610,4 +629,8 @@ header {
 .turmas-btn {
     margin-top: 50px;
 
+}
+
+@media screen and (max-width: 1024px) {
+    
 }
