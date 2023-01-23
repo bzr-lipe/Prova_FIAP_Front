@@ -187,7 +187,10 @@
     }
 
     #accordion-3-mobile{
-        
+
     }
  
+    .informacoes-cursos-subtitle{
+        display: none;
+    }
   }
