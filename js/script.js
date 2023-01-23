@@ -55,13 +55,14 @@ window.addEventListener('scroll', () => {
 })
 
 text1.onmouseover = () => {
-    document.getElementById('list-marker1').classList.add('list-marker-active')
+    document.getElementById('list-marker1').classList.add('list-marker-active');
 }
 text2.onmouseover = () => {
     document.getElementById('list-marker2').classList.add('list-marker-active')
 }
 
 text1.onmouseout = () => {
+    
     document.getElementById('list-marker1').classList.remove('list-marker-active')
 }
 text2.onmouseout = () => {
