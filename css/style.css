@@ -188,6 +188,10 @@ header {
     bottom: 48px;
 }
 
+.graduacao-heros-desc-decor{
+    display: none;
+}
+
 .informacoes-cursos-subtitle {
     font-family: 'Gotham HTF Medium';
     font-size: 16px;
@@ -241,7 +245,6 @@ header {
     margin: 14px 19px 0 73px;
     transition: .2s;
 }
-
 
 
 .list-marker-active {
@@ -308,6 +311,7 @@ header {
 
 .arrow-down-icon {
     margin: 30px auto;
+    
     width: 25px;
     height: 25px;
     border-top: 2px solid var(--magenta);

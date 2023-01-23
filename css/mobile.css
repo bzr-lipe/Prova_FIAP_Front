@@ -7,9 +7,17 @@
         height: 60px;
     }
 
-    #header-top-btn {
-        display: none;
+    #menu-header .btn-join {
+        width: 130px;
+        font-size: 9px;
     }
+
+    .btn-join {
+        width: 60px;
+        padding: 7px 0;
+        margin-left: 10px;
+    }
+
 
     #menu-header {
         gap: 0px;
@@ -35,23 +43,72 @@
         background-position: top;
     
     }
-    
+
     .components-menu-item{
         font-size: 22px;
     }
+
+    .graduacao-heros{
+        margin-top: 50px;
+        width: 318px;
+    }
     
     .graduacao-heros-title {
-        font: 35px 'Gotham HTF Book';
+        font: 30px 'Gotham HTF Book';
+        font-weight: 400;
+        line-height: 35px;
     }
     
     .graduacao-heros-desc {
-        font: 20px 'Gotham HTF Book';
-        font-weight: 300;
-        line-height: 25px;
+        padding-top: 10px;
+        font: 18px 'Gotham HTF Book';
+        font-weight: 400;
+        line-height: 22px;
     }
 
     .header-logo-image{
         width: 60%;
     }
 
+    .graduacao-heros-desc-decor {
+        display: block;
+        width: 10px;
+        height: 2px;
+        background-color: var(--magenta);
+        position: absolute;
+        margin-left: 159px;
+        margin-top: 25px;
+    }
+
+    #scroll-text{
+        display: none;
+    }
+
+    .informacoes-curso
+    {
+        width: 90%;
+    }
+
+    .informacoes-cursos-title{
+        border: 1px solid var(--light-gray);
+    }
+
+
+    .informacoes-curso-column-left {
+        border: none;
+        width: 100%;
+    }
+
+    .informacoes-curso-column-left p {
+        padding: 0;
+    }
+
+    .informacoes-curso-column-right {
+        display: none;
+    }
+    
+    .informacoes-curso-columns div {
+        width: 90%;
+    }
+ 
   }
